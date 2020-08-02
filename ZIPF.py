@@ -41,4 +41,6 @@ for i in l[0:10]:
     rdic[i[0]]=i[1]
 plt.bar(list(rdic.keys()), rdic.values(), color='g')
 plt.title(filename)
-plt.show()
+plt.show(block=False)
+plt.pause(10)
+plt.close()
